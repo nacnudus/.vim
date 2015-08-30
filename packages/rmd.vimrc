@@ -1,0 +1,75 @@
+" Don't automatically view html
+   let vimrplugin_openhtml = 0
+
+" unmap irritating inser-tmode LocalLeader maps that interfere with typing when
+" the typing involvs the LocalLeader key.
+silent! iunmap <buffer> <LocalLeader>ca
+silent! iunmap <buffer> <LocalLeader>cd
+silent! iunmap <buffer> <LocalLeader>ce
+silent! iunmap <buffer> <LocalLeader>cc
+silent! iunmap <buffer> <LocalLeader>ko
+silent! iunmap <buffer> <LocalLeader>kh
+silent! iunmap <buffer> <LocalLeader>kl
+silent! iunmap <buffer> <LocalLeader>kp
+silent! iunmap <buffer> <LocalLeader>kr
+silent! iunmap <buffer> <LocalLeader>kn
+silent! iunmap <buffer> <LocalLeader>rd
+silent! iunmap <buffer> <LocalLeader>r-
+silent! iunmap <buffer> <LocalLeader>r=
+silent! iunmap <buffer> <LocalLeader>ro
+silent! iunmap <buffer> <LocalLeader>rb
+silent! iunmap <buffer> <LocalLeader>rg
+silent! iunmap <buffer> <LocalLeader>rr
+silent! iunmap <buffer> <LocalLeader>rs
+silent! iunmap <buffer> <LocalLeader>rh
+silent! iunmap <buffer> <LocalLeader>re
+silent! iunmap <buffer> <LocalLeader>ra
+silent! iunmap <buffer> <LocalLeader>rv
+silent! iunmap <buffer> <LocalLeader>rt
+silent! iunmap <buffer> <LocalLeader>rn
+silent! iunmap <buffer> <LocalLeader>rp
+silent! iunmap <buffer> <LocalLeader>rm
+silent! iunmap <buffer> <LocalLeader>rl
+silent! iunmap <buffer> <LocalLeader>r<Right>
+silent! iunmap <buffer> <LocalLeader>r<Left>
+silent! iunmap <buffer> <LocalLeader>q
+silent! iunmap <buffer> <LocalLeader>o
+silent! iunmap <buffer> <LocalLeader>d
+silent! iunmap <buffer> <LocalLeader>l
+silent! iunmap <buffer> <LocalLeader>ch
+silent! iunmap <buffer> <LocalLeader>pa
+silent! iunmap <buffer> <LocalLeader>pd
+silent! iunmap <buffer> <LocalLeader>pe
+silent! iunmap <buffer> <LocalLeader>pp
+silent! iunmap <buffer> <LocalLeader>fa
+silent! iunmap <buffer> <LocalLeader>fd
+silent! iunmap <buffer> <LocalLeader>fe
+silent! iunmap <buffer> <LocalLeader>ff
+silent! iunmap <buffer> <LocalLeader>ba
+silent! iunmap <buffer> <LocalLeader>bd
+silent! iunmap <buffer> <LocalLeader>be
+silent! iunmap <buffer> <LocalLeader>bb
+silent! iunmap <buffer> <LocalLeader>;
+silent! iunmap <buffer> <LocalLeader>xu
+silent! iunmap <buffer> <LocalLeader>xc
+silent! iunmap <buffer> <LocalLeader>xx
+silent! iunmap <buffer> <LocalLeader>rw
+silent! iunmap <buffer> <LocalLeader>rq
+silent! iunmap <buffer> <LocalLeader>rc
+silent! iunmap <buffer> <LocalLeader>rf
+
+" Extras for rnoweb
+silent! iunmap <buffer> <LocalLeader>gt
+silent! iunmap <buffer> <LocalLeader>gp
+silent! iunmap <buffer> <LocalLeader>op
+silent! iunmap <buffer> <LocalLeader>si
+silent! iunmap <buffer> <LocalLeader>kb
+silent! iunmap <buffer> <LocalLeader>sb
+silent! iunmap <buffer> <LocalLeader>sp
+silent! iunmap <buffer> <LocalLeader>sw
+
+" Extras for r
+silent! iunmap <buffer> <LocalLeader>ks
+silent! iunmap <buffer> <LocalLeader>ao
+silent! iunmap <buffer> <LocalLeader>ae
+silent! iunmap <buffer> <LocalLeader>aa
