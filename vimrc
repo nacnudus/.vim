@@ -123,6 +123,7 @@ Plug 'godlygeek/tabular' " dependency of plasticboy/vim-markdown
 Plug 'othree/html5.vim', {'for': ['html', 'xhttml', 'css']} " hmtl
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " depends on godlygeek/tabular
 Plug 'waylan/vim-markdown-extra-preview', { 'for': 'markdown' } " preview markdown
+Plug 'tmux-plugins/vim-tmux' " tmux config syntax
 
 
 " Productivity
@@ -131,9 +132,10 @@ Plug 'Rykka/easydigraph.vim' " convert digraphs to graphs
 Plug 'Rykka/easydigraph.vim' " smart digraphs insertion
 Plug 'Shougo/junkfile.vim' " scratch files with types
 Plug 'christoomey/vim-sort-motion' " sort text by motion
+Plug 'christoomey/vim-tmux-navigator' " Consistent movement between vim and tmux panes
 Plug 'dahu/vim-fanfingtastic'            " search mutliple lines
 Plug 'delimitMate.vim' " Autocompletion of (, [, {, ', ...
-Plug 'jimsei/winresizer' " easily window resizing
+Plug 'jimsei/winresizer' " easy window resizing
 Plug 'joedicastro/DirDiff.vim', { 'on': 'DirDiff'} " diff directories
 Plug 'kshenoy/vim-signature' " toggle, display and navigate marks
 Plug 'salsifis/vim-transpose', { 'on': 'Transpose'} " transpose lines and text blocks
@@ -145,6 +147,7 @@ Plug 'tpope/vim-speeddating' " Smart and fast date changer
 Plug 'tpope/vim-surround' " surround vim objects with a pair of identical chars
 Plug 'tpope/vim-unimpaired'              " insert/move lines up/down
 Plug 'tpope/vim-dispatch'              " asynchronous external command execution
+Plug 'tpope/vim-eunuch' " help for UNIX e.g. :Remove :SudoWrite :Move :Rename etc.
 Plug 'vim-scripts/loremipsum', { 'on': 'Loremipsum'} " to insert lorem ipsum blocks
 Plug 'vim-scripts/zoomwintab.vim', {'on' : 'ZoomWinTabToggle'} " Window zoom/resize
 

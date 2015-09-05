@@ -29,6 +29,22 @@ nnoremap Q <nop>                " Never go back to compatible mode
 
 " }}}
 
+" Pane switching {{{
+
+" Custom Key Bindings 
+let g:tmux_navigator_no_mappings = 1
+execute "set <M-h>=\eh"
+execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
+execute "set <M-l>=\el"
+nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <m-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <m-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <m-.> :TmuxNavigateRight<cr>
+nnoremap <silent> <m-\> :TmuxNavigatePrevious<cr>
+
+" }}}
+
 " Searching {{{
 
 set incsearch                   " incremental searching
