@@ -140,6 +140,7 @@ Plug 'joedicastro/DirDiff.vim', { 'on': 'DirDiff'} " diff directories
 Plug 'kshenoy/vim-signature' " toggle, display and navigate marks
 Plug 'salsifis/vim-transpose', { 'on': 'Transpose'} " transpose lines and text blocks
 Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle'} " browse the undo tree
+let g:gundo_prefer_python3=1 " Otherwise gundo complains about lack of python2.4+ support
 Plug 'tpope/vim-characterize' " reveals all the character info, Unicode included
 Plug 'tpope/vim-commentary' " toggle comments
 Plug 'tpope/vim-repeat' " extend repetitions by the 'dot' key
@@ -171,6 +172,7 @@ call plug#end()
 
 " Required:
 filetype plugin indent on      " Indent and plugins by filetype
+
 
 " END PLUGINS (administrated by vim-plug) }}}
 
