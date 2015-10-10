@@ -134,6 +134,10 @@ let g:neocomplete#sources#omni#input_patterns.python='[^. \t]\.\w*'
 " let g:neocomplcache_enable_force_overwrite_completefunc = 1
 let g:neocomplete#sources#omni#input_patterns.r = '[[:alnum:].\\]\+'
 let g:neocomplete#sources#omni#functions.r = 'rcomplete#CompleteR'
+" Use Alt+- to create <- as in Rstudio
+set <M-->=-
+let vimrplugin_assign_map = "<M-->"
+
 
 " }}}
 
