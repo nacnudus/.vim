@@ -17,7 +17,8 @@ let g:nacvim_packages=[
             \'registers',
             \'markdown',
             \'copyediting',
-            \'python'
+            \'python',
+            \'latex'
             \]
 
 
