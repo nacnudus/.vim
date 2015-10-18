@@ -51,8 +51,8 @@ let g:syntastic_style_warning_symbol  = '⚡'
 " Checkers and styles
 let g:syntastic_python_checkers = ['pylint', 'pep8', 'mccabe', 'pep257']
 let g:syntastic_enable_r_lintr_checker = 1
-let g:syntastic_r_checkers = ['lintr', 'svtools']
-" let g:syntastic_r_checkers = 1
+let g:syntastic_r_checkers = 1
+" let g:syntastic_r_checkers = ['lintr', 'svtools']
 " let g:syntastic_enable_r_svtools_checker=1
 " If speed is a problem, specify less intensive checking with the line below
 " let g:syntastic_r_lint_styles = 'list(spacing.indentation.notabs, spacing.indentation.evenindent)'
@@ -66,6 +66,16 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " let g:syntastic_mode_map = { 'mode': 'active',
 "             \ 'active_filetypes': ['r', 'rmd', 'rmarkdown', 'rst'],
 "             \ 'passive_filetypes': ['tex', 'python'] }
+
+" Recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " }}}
 
