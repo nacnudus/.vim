@@ -122,7 +122,7 @@ Plug 'chrisbra/csv.vim'                  " csv filetype plugin
 Plug 'godlygeek/tabular' " dependency of plasticboy/vim-markdown
 Plug 'othree/html5.vim', {'for': ['html', 'xhttml', 'css']} " hmtl
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " depends on godlygeek/tabular
-" Plug 'waylan/vim-markdown-extra-preview', { 'for': 'markdown' } " preview markdown " No python3 support
+Plug 'waylan/vim-markdown-extra-preview', { 'for': 'markdown' } " preview markdown " No python3 support
 Plug 'tmux-plugins/vim-tmux' " tmux config syntax
 
 
@@ -140,7 +140,7 @@ Plug 'joedicastro/DirDiff.vim', { 'on': 'DirDiff'} " diff directories
 Plug 'kshenoy/vim-signature' " toggle, display and navigate marks
 Plug 'salsifis/vim-transpose', { 'on': 'Transpose'} " transpose lines and text blocks
 Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle'} " browse the undo tree
-let g:gundo_prefer_python3=1 " Otherwise gundo complains about lack of python2.4+ support
+" let g:gundo_prefer_python3=1 " Otherwise gundo complains about lack of python2.4+ support
 Plug 'tpope/vim-characterize' " reveals all the character info, Unicode included
 Plug 'tpope/vim-commentary' " toggle comments
 Plug 'tpope/vim-repeat' " extend repetitions by the 'dot' key
@@ -344,8 +344,8 @@ if filereadable(s:after_vimrc)
     exec ':so ' . s:after_vimrc
 endif
 
-autocmd FileType tex let b:atp_BibCompiler = "biber"
-autocmd FileType tex let b:atp_TexCompiler = "pdflatex"
+" autocmd FileType tex let b:atp_BibCompiler = "biber"
+" autocmd FileType tex let b:atp_TexCompiler = "pdflatex"
 
 nnoremap <leader>r :set operatorfunc=<SID>GoogleScholarBibTex<cr>g@
 vnoremap <leader>r :<c-u>call <SID>GoogleScholarBibTex(visualmode())<cr>
