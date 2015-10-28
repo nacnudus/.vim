@@ -94,7 +94,9 @@ Plug 'jcfaria/Vim-R-plugin', { 'for': ['r', 'rhelp', 'rmd', 'rrst',
 " a pain when typing comment.
 
 " LaTeX
-Plug 'coot/atp_vim' " Automatic TeX Plugin (uses latex-box under the hood)
+" Plug 'coot/atp_vim' " Automatic TeX Plugin (uses latex-box under the hood)
+Plug 'lervag/vimtex'
+let g:vimtex_view_method='zathura'
 
 " Python
 Plug 'Yggdroot/indentLine', {'for': 'python'} " Show indent lines
@@ -343,9 +345,6 @@ let s:after_vimrc = expand('~/.after.vimrc')
 if filereadable(s:after_vimrc)
     exec ':so ' . s:after_vimrc
 endif
-
-" autocmd FileType tex let b:atp_BibCompiler = "biber"
-" autocmd FileType tex let b:atp_TexCompiler = "pdflatex"
 
 nnoremap <leader>r :set operatorfunc=<SID>GoogleScholarBibTex<cr>g@
 vnoremap <leader>r :<c-u>call <SID>GoogleScholarBibTex(visualmode())<cr>
