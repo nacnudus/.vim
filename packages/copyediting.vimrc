@@ -1,9 +1,11 @@
 
-autocmd FileType tex let b:atp_BibCompiler = "biber"
-autocmd FileType tex let b:atp_TexCompiler = "pdflatex"
+" autocmd FileType tex let b:atp_BibCompiler = "biber"
+" autocmd FileType tex let b:atp_TexCompiler = "pdflatex"
 
 " Make forward-search work
-autocmd FileType tex nnoremap <buffer> <LocalLeader>f :call atplib#compiler#SyncTex("!", 0, b:atp_MainFile, b:atp_XpdfServer)<CR>
+" autocmd FileType tex nnoremap <buffer> <LocalLeader>f :call atplib#compiler#SyncTex("!", 0, b:atp_MainFile, b:atp_XpdfServer)<CR>
+
+let g:vimtex_quickfix_ignore_all_warnings = 1
 
 " Quickly comment-out the rest of a line
 nnoremap <buffer> <LocalLeader>% i %<Esc>
