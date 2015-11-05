@@ -95,7 +95,7 @@ Plug 'jcfaria/Vim-R-plugin', { 'for': ['r', 'rhelp', 'rmd', 'rrst',
 
 " LaTeX
 " Plug 'coot/atp_vim' " Automatic TeX Plugin (uses latex-box under the hood)
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': ['tex',  'bib', 'bst'] }
 let g:vimtex_view_method='zathura'
 
 " Python
