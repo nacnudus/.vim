@@ -90,6 +90,7 @@ Plug 'jalvesaq/R-Vim-runtime', { 'for': ['r', 'rhelp', 'rmd', 'rrst',
       \ 'rbrowser', 'rdoc', 'rout', 'rmarkdown', 'rnoweb'] } " Must come before Vim-R-plugin
 Plug 'jcfaria/Vim-R-plugin', { 'for': ['r', 'rhelp', 'rmd', 'rrst',
       \ 'rbrowser', 'rdoc', 'rout', 'rmarkdown', 'rnoweb'] } " The actual R plugin
+let g:rplugin_pdfviewer = "zathura"
 " insert mode keybindings in rmd are removed in ftplugin/rmd.vim because they're
 " a pain when typing comment.
 
