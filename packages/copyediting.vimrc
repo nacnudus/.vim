@@ -47,4 +47,4 @@ function! Query()
 endfunction
 
 " Prepare bbl or other formatted references for bbl2bib.py
-vnoremap <leader>C y:new<cr>P:%s/.\zs\n\ze./ /<cr>:g/^$/d<cr>:%s/\\bibitem\ \?{[[:alnum:]]\+}\ \?//ge<cr>:%s/\\[[:alpha]]\+{\(.\+\)}/\1/ge<cr>:%s/\\[[:alpha:]]\+\ \?//ge<cr>:%s/[{}]//ge<cr>
+vnoremap <leader>C y:new<cr>P:%s/.\zs\n\ze./ /<cr>:g/^$/d<cr>:%s/[^^]\zs\\[[:alpha:]]\+{\(.\+\)}/\1/ge<cr>
