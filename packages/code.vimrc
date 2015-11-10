@@ -34,6 +34,12 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
 
 " }}}
 
+" R {{{
+
+nnoremap <silent> <LocalLeader>gl :call RAction("dplyr::glimpse")<CR>
+
+" }}}
+
 " Syntastic {{{
 
 nmap <silent><Leader>N :SyntasticCheck<CR>:Errors<CR>
@@ -62,7 +68,7 @@ let g:syntastic_tex_checkers = ['lacheck', 'chktex']
 " Python is passive to avoid conflicts with vim-pythonmode
 let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': [],
-            \ 'passive_filetypes': ['tex', 'python', 'r', 'rmd', 'rmarkdown', 'rst'] }
+            \ 'passive_filetypes': ['tex', 'python', 'r', 'rmd', 'rmarkdown', 'rst', 'cpp'] }
 " let g:syntastic_mode_map = { 'mode': 'active',
 "             \ 'active_filetypes': ['r', 'rmd', 'rmarkdown', 'rst'],
 "             \ 'passive_filetypes': ['tex', 'python'] }
