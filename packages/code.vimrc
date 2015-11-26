@@ -37,6 +37,7 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
 " R {{{
 
 nnoremap <silent> <LocalLeader>gl :call RAction("dplyr::glimpse")<CR>
+let vimrplugin_ca_ck=1
 
 " }}}
 
