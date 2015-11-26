@@ -271,3 +271,9 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 " Use vim-snippets
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
+
+" vimagit {{{
+
+let g:magit_show_help=0
+
+" }}}

@@ -80,7 +80,8 @@ Plug 'elzr/vim-json', {'for': 'json'}
 Plug 'scrooloose/syntastic' " syntax checking
 
 " Git
-Plug 'tpope/vim-fugitive' " Git
+" Plug 'tpope/vim-fugitive' " Git
+Plug 'jreybert/vimagit' " Git, better than fugitive
 Plug 'airblade/vim-gitgutter' " symbol margin for fugitive
 Plug 'gregsexton/gitv', {'on': 'Gitv'} " Git viewer
 Plug 'joedicastro/vim-github-dashboard' " Browse GitHub events in Vim
